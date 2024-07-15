@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<title>Créer un Projet</title>
+
+<div class="container">
+    <h1>Créer un nouveau projet</h1>
+    <form action="/app" method='POST'>
+        Nom : <input type="text" name="nomProjet"><br><br>
+        Description : <input type="text" name="description"><br><br>
+        Objectifs : <input type="text" name="objectifs"><br><br>
+        Date de début : <input type="date" name="DateDeb"><br><br>
+        Date de fin : <input type="date" name="DateFin"><br><br>
+        <button type="submit" class="creer">Créer</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+<button class="button" type="submit"><a><img src={{url_for('static',filename="/img/menu.png")}} alt="" width="20"></a>
+        </button>
+
+        <form action="/addProject">
+            <button class="button" type="submit"><a><img src={{url_for('static',filename="/img/more.png")}} alt="" width="20"></a>
+            </button>
+        </form>
+                <br>
+
+        <form action=""><!--accéder aux tâches-->
+            <button class="button" type="submit"><a><img src={{url_for('static',filename="/img/taches.png")}} alt="" width="20"></a>
+            Tâches</button>
+        </form>
+
+        <form action=""><!--accéder aux messages-->
+            <button class="button" type="submit"><a><img src={{url_for('static',filename="/img/message.png")}} alt="" width="20"></a>
+            Messages</button>
+        </form>
+
+        <form action=""> <!--accéder aux notifications-->
+            <button class="button" type="submit"><a><img src={{url_for('static',filename="/img/notifications.png")}} alt="" width="20"></a>
+            Notifications</button>
+        </form>
+
+
+
+.container{
+position: absolute;
+left: 90px;
+right: 19px;
+top: 48px;
+bottom: -64px;
+
+#navbar{
+position: absolute;
+width: 72px;
+
+left: 7px;
+top: 15px;
+
+
+
+{% for targets in target %}
+{% endfor %}
+ target = getTarget

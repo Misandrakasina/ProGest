@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http: //ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <link rel="stylesheet" href="chatbox.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="chatbox"></div>
+    <form action="" class="chat-form">
+        <input type="text" class="user-input" placeholder="Entrez votre message ici...">
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            $('#chat-form').on('submit', function(event){
+                event.preventDefault();
+                var userInput = $('#user-input').val();
+                $.post("/get", {msg: userInput}, function(data, status){
+                    $('#chatbox').append("<p>" + data.response + "</p>");
+                })
+            })
+        })
+    </script>
+
+</body>
+</html>

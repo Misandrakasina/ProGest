@@ -1,0 +1,29 @@
+{%extends "base.html" %}
+
+{%block content%}
+<title>Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<div class="container">
+ <form action="/addProject" method="GET">
+            <button class="button" type="submit"><a><img src={{url_for('static',filename="/img/more.png")}} alt="" width="30"></a>
+            </button>
+ </form>
+     <h1>Projet</h1>
+
+<ul>
+    {% for nom in nomProjet %}
+        {% for n in nom %}
+            <li class="nomProjet">
+                <!-- Construit l'URL dynamiquement en incluant l'id du projet -->
+                <a class="link" href="/Project/{{n[0]}}">
+                    {{n[0]}}
+                </a>
+            </li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+
+
+</div>
+
+{%endblock%}

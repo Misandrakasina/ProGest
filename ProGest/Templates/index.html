@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/static/img/logo_ProGest.png">
+    <link rel="stylesheet" href={{url_for('static',filename="css/index.css")}}>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<body>
+
+<div>
+    <br>
+        <h1><img src={{url_for('static',filename="img/Progest.png")}} alt="" width ="200"></h1>
+    <h1>Bienvenue sur ProGest</h1>
+    <h2>Veuillez vous connecter</h2>
+    <form action="{{url_for ('traitement')}}" method="POST">
+        E-mail : <input type="email" name="mail" required><br><br>
+        Mot de passe : <input type="password" name="mdp" required><br><br>
+        Nom d'utilisateur : <input type="text" name="username" required> <br><br><br>
+        <button type="submit" class="seCo"><strong>Se connecter</strong></button><br><br>
+        <button type="submit"class="créer"><strong>Créer un compte</strong></button>
+
+    </form>
+</div>
+</body>
+</html>

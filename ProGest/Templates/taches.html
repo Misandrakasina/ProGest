@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+
+{% block content %}
+<link rel="stylesheet" href={{url_for('static',filename="css/home.css")}}>
+<!--<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Taches</th>
+            <th scope="col">Statut</th>
+            <th scope="col">Priorité</th>
+            <th scope="col">Assigné à</th>
+        </tr>
+    </thead>
+
+    <tbody>!-->
+      {%for taches in tache: %}
+        {%for t in taches: %}
+           <p>{{t[0]}}</p>
+
+        {% endfor %}
+      {%endfor%}
+    </tbody>
+    <a type="boutton" href="/addTache"> + New </a>
+</table>
+
+{% endblock  %}
+

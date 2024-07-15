@@ -1,0 +1,43 @@
+{%extends "base.html" %}
+
+{%block content%}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
+
+    <title>{{ projet[0]}}</title>
+</head>
+
+<!-- Affiche le titre du premier projet -->
+<h1 class="header1">{{ projet[0]}}</h1>
+
+<div class="form-contain">
+
+    <div class="description">
+        <h3>Description : </h3> <br>
+        <p class="paragraph">{{ projet[1]}}</p>
+    </div>
+
+    <div class="obj">
+        <h3>Objectifs : </h3> <br>
+        <p class="paragraph">{{ projet[2]}}</p>
+    </div>
+
+    <div class="date-deb">
+        <h3>Date de début :</h3> <br>
+        <p class="paragraph">{{ projet[3]}}</p>
+    </div>
+
+    <div class="date-fin">
+        <h3>Date de fin :</h3> <br>
+        <p class="paragraph">{{ projet[4]}}</p>
+    </div>
+
+    <div class="tache">
+        <a type="boutton" href="/taches"> Tache :</a>
+    </div>
+</div>
+
+<p><a type="button" href="/delete/{{ projet[0] }}" class="btn btn-danger" style="background-color:red;border:0;">Supprimer</a></p>
+<p><a type="button" href="/people" class="btn btn-primary" style="background-color:green;border:0;">Ajouter des collaborateurs</a></p>
+
+{% endblock %}

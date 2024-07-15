@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<title>Créer une tache </title>
+
+<div class="container">
+    <h2>Créer une nouvelle tache</h2>
+    <form action="/creerTache" method='POST'>
+        Nom : <input type="text" name="nomTache" required><br><br>
+        Statut : <select id="statut", name="statut" required>
+                    <option value="en_attente"> En attente </option>
+                    <option value="en_cours"> En Cours </option>
+                    <option value="terminer"> Termier </option>
+                    <option value="reporte"> Reporter </option>
+                 </select> <br> <br>
+        Priorité : <select id="priorite", name="priorite" required>
+                    <option value="usuelle"> Usuelle </option>
+                    <option value="critique"> Critique </option>
+                    <option value="urgent"> Urgent </option>
+                    <option value="importante"> Importante </option>
+                 </select> <br> <br>
+        Assigné à : <input type="email" name="collab" required><br><br>
+
+        <button type="submit">Créer</button>
+    </form>
+</div>
+
+{% endblock %}

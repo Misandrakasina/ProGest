@@ -1,0 +1,23 @@
+div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+input{
+    width: 200px;
+    padding: 10px 2px;
+    border-radius: 10px;
+
+}
+button{
+    border-radius: 15px;
+    padding: 12px 45px;
+    border : None;
+}
+.créer{
+    background-color: rgb(224, 209, 67);
+    
+}
+.seCo{
+    background-color: rgba(0, 145, 182, 0.842);
+}

@@ -1,0 +1,191 @@
+div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+input{
+    width: 200px;
+    padding: 10px 2px;
+    border-radius: 10px;
+
+}
+button{
+    border-radius: 15px;
+    padding: 12px 45px;
+    border : None;
+}
+.créer{
+    background-color: rgb(224, 209, 67);
+    
+}
+.seCo{
+    background-color: rgba(0, 145, 182, 0.842);
+}
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #E0E0E0
+}
+
+.ajoutPro{
+    padding: 100px 50px;
+    border-radius: 40;
+    font-size: 50px;
+}
+.projet{
+
+    color:black;
+    font-size: large;
+    padding: 10.5px 150px;
+    background-color: #E0E0E0;
+    padding-left: 20px ;
+    padding-right: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color:rgb(7, 138, 61) ;
+
+
+}
+
+.taches,.calendrier,.messages{
+    border: 0;
+    color:black;
+    font-size: large;
+    padding: 10.5px 150px;
+    background-color: #E0E0E0;
+
+    padding-left: 20px ;
+    padding-right: 30px;
+
+}
+.logo{
+    position:absolute;
+    top : 10px;
+    right : 10px;
+
+}
+#navbar{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 0px ;
+gap: 30px;
+
+position: absolute;
+width: 72px;
+height: 709px;
+left: 7px;
+top: 15px;
+
+background: #FEF7FF;
+}
+h1{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px;
+}
+.container{
+position: absolute;
+left: 90px;
+right: 19px;
+top: 48px;
+bottom: -64px;
+
+background: #FFFFFF;
+border-radius: 28px;
+
+
+}
+
+.back{
+    /* container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+h1{
+/* headline */
+
+width: 47px;
+height: 70px;
+
+/* M3/headline/small */
+
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+
+/* identical to box height, or 133% */
+
+color: #1D1B20;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+.button
+{
+border : none;
+background-color:#FFFFFF;
+}
+.button:hover {
+background-color : #CECECE;
+}
+
+.nomProjet{
+padding :75px;
+
+}
+.link{
+color:black;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 32px;
+}
+.creer{
+    border-radius: 15px;
+    padding: 10px 45px;
+    border : None;
+    background-color: rgb(224, 209, 67);
+}
+input{
+    width: 200px;
+    padding: 8px 2px;
+    border-radius: 10px;
+
+}
+*{
+font-family: 'Roboto';
+}

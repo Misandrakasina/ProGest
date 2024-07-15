@@ -1,0 +1,166 @@
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+          <th scope="col">Projets</th>
+          <th scope="col">Statut</th>
+          <th scope="col">Priorité</th>
+          <th scope="col">Equipe</th>
+        </tr>
+    </thead>
+    <tbody>
+      {%for Projet in nomProjet%}
+        <tr>
+          <th scope="row">{{Projet[0]}}</th>
+          <td>{{Projet[1]}}</td>
+          <td>{{Projet[2]}}</td>
+          <td>{{Projet[3]}}</td>
+          <td><a href="/edit" type="button" class="btn btn-success">Modifier</a></td>
+        </tr>
+      {%endfor%}
+    </tbody>
+</table>
+
+
+
+
+.ajoutPro {
+    background-color: #03a9f4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ajoutPro:hover {
+    background-color: #0288d1;
+}
+
+
+
+
+
+#navbar{
+text-align
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td {
+  text-align: center;
+}
+
+
+
+<p>
+    <form action="/app" method='POST'>
+        Projet : <input type="text" name="Projets"><br><br>
+        Statut : <select id="statut", name="statut">
+                    <option value="en_attente"> En attente </option>
+                    <option value="en_cours"> En Cours </option>
+                    <option value="terminer"> Termier </option>
+                    <option value="reporte"> Reporter </option>
+                 </select> <br> <br>
+        Priorité : <select id="priorite", name="priorite">
+                    <option value="usuelle"> Usuelle </option>
+                    <option value="critique"> Critique </option>
+                    <option value="urgent"> Urgent </option>
+                    <option value="importante"> Importante </option>
+                 </select> <br> <br>
+        Equipe : <input type="text" name="equipe"><br><br>
+        <button type="submit">Créer</button>
+    </form>
+</p>
+
+
+
+/* Style de base pour le body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Styles pour les labels et les inputs */
+form input[type="text"],
+form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style du bouton */
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Espacement entre les sections du formulaire */
+form p {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+<div class="materials-list">
+  {% for material in materials %}
+    <div class="material-item">
+      <div><strong>Numero:</strong> {{material[0]}}</div>
+      <div><strong>Designation:</strong> {{material[1]}}</div>
+
+
+
